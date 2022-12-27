@@ -50,5 +50,16 @@ public abstract class Car {
         System.out.println("Press the break");
     }
     public abstract void start();
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", year=" + year +
+                ", price=" + price +
+                '}';
     }
+}
 
