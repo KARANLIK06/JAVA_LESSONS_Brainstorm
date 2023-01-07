@@ -32,7 +32,7 @@ Animal Task:
         canBreathe=true;
     }
 
-
+    //-----------Constructor-------------//
     public Animal(String name, String breed, char gender, int age, String size, String color) {
         setName(name);
         this.breed = breed;
@@ -87,10 +87,13 @@ Animal Task:
     }
 
 
+    //--------Instance Method-----------------//
     public void drink(){
         System.out.println(name+" is drinking");
     }
 
+
+    //----------Abstract Method-----------------//
     public abstract void eat();
 
 
