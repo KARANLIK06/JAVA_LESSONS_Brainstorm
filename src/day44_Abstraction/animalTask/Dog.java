@@ -7,7 +7,7 @@ public final class Dog extends Animal implements Playable{
     }
 
     public void bark(){
-        System.out.println(getName()+ "is barking");
+        System.out.println(getName()+ " is barking");
     }
 
     @Override
