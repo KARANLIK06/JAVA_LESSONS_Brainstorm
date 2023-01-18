@@ -23,7 +23,7 @@ public class ListIntro {
         System.out.println("--------------------------");
 
         System.out.println(list4);
-        ((Stack<Integer>) list4).pop();
+        ((Stack<Integer>) list4).pop();     // deletes last index
 
         System.out.println("after pop : "+list4);
 
