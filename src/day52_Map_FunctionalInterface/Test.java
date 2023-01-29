@@ -14,6 +14,18 @@ public class Test {
         };
         oddOrEvenNumber.apply(20);
 
+        // function2: create a function that can check if a person is eligible to buy alcohol
+        MyFirstFunctionalInterface eligibleToBuyAlcohol= (age) ->{
+            if (age>=21){
+                System.out.println("Eligible to buy alcohol");
+            }else{
+                System.out.println("Not eligible to buy alcohol");
+
+            }
+        };
+        eligibleToBuyAlcohol.apply(20);
+
+
 
     }
 }
