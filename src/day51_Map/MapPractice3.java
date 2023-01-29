@@ -20,7 +20,7 @@ public class MapPractice3 {
         map.put("Steven", 135000);
 
         // displays the names of all employess who has the maximum salaries
-
+/*
         int maxSalary = Integer.MIN_VALUE;
         for ( Integer eachValue : map.values() ) {
             if(eachValue > maxSalary){
@@ -28,8 +28,17 @@ public class MapPractice3 {
             }
         }
 
+ */
 
+
+        int maxSalary = Collections.max( map.values() );
         System.out.println("maxSalary = " + maxSalary);
 
+
+        for (Map.Entry<String, Integer> pair : map.entrySet()) {
+            if(pair.getValue() == maxSalary){
+                System.out.println(pair.getKey());
+            }
+        }
     }
 }
