@@ -1,5 +1,7 @@
 package day51_Map;
 
+import javax.sound.midi.Soundbank;
+
 public class TestEnum {
     public static void main(String[] args) {
         // String browser= "Wooden Spoon";
@@ -22,5 +24,8 @@ public class TestEnum {
                 System.out.println("Chrome is selected");
 
         }
+        System.out.println("------------------------------------");
+
+        Season season= Season.SUMMER;
     }
 }
