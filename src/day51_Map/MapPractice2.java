@@ -37,6 +37,19 @@ public class MapPractice2 {
         }
         System.out.println(name1);
         System.out.println(name2);
+
+        System.out.println("------------------------------------------");
+
+        //   how many employees has the salary between 120k ~ 150K?
+
+        int count=0;
+        for (Integer eachValue : map.values()) {
+            if (eachValue>=120000&& eachValue<=150000){
+                count++;
+            }
+        }
+        System.out.println(count);
+
     }
 
 }
