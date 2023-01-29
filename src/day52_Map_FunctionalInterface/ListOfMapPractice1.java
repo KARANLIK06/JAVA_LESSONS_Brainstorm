@@ -31,7 +31,7 @@ public class ListOfMapPractice1 {
         scrumTeam4.put("Alim", "PO");
         scrumTeam4.put("Kaiser", "SDET");
         scrumTeam4.put("Alinur","SDET");
-        scrumTeam4.put("Farya","Develepor");
+        scrumTeam4.put("Farya","Developer");
         scrumTeam4.put("Sherzod", "Developer");
         scrumTeam4.put("Gulsen", "SM");
         scrumTeam4.put("David","Sdet");
@@ -82,11 +82,19 @@ public class ListOfMapPractice1 {
             }
 
         }
-        
+
+        System.out.println("--------------------------------------");
 
 
         //   1.3 Print the names of all Developers
 
+        for (Map<String, String> eachScrumTeam : scrumTeams) {
+            for (Map.Entry<String, String> pair : eachScrumTeam.entrySet()) {
+                if (pair.getValue().equals("Developer")){
+                    System.out.println(pair.getKey());
+                }
+            }
+        }
     }
 
 }
