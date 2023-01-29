@@ -31,5 +31,13 @@ public class MapPractice4 {
         groups.put(5, group5);
 
         System.out.println(groups);
+
+        for (String each : groups.get(9)) {
+            System.out.println(each);
+        }
+        System.out.println("--------------------------------------");
+
+        System.out.println(groups.get(2).get(1));
+        System.out.println(groups.get(2).get(1).charAt(0));
     }
 }
