@@ -59,6 +59,16 @@ public class MapPractice2 {
                 System.out.println(pairs.getKey());
             }
         }
+        System.out.println("------------------------------------------");
+
+        //  1.5 increase the salary employee by 10K if the current salary of employee is less than 120K
+
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            if (entry.getValue()<120000){
+                entry.setValue(entry.getValue()+10000);
+            }
+        }
+        System.out.println(map);
 
     }
 
