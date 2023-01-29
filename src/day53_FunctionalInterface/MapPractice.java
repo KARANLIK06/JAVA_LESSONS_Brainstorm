@@ -81,16 +81,27 @@ public class MapPractice {
         double max = Double.MIN_VALUE;
         String namemax="";
 
+        double min = Double.MAX_VALUE;
+        String namemin="";
+
         for (Map<String, Double> eachUnit : allUnits) {
             for (Map.Entry<String, Double> entry : eachUnit.entrySet()) {
                 if (entry.getValue()>max){
                     max= entry.getValue();
                     namemax= entry.getKey();
                 }
+                if (entry.getValue()<min){
+                    min= entry.getValue();
+                    namemin= entry.getKey();
+                }
             }
         }
         System.out.println("namemax = " + namemax);
         System.out.println("max = " + max);
+
+
+        System.out.println("namemin = " + namemin);
+        System.out.println("min = " + min);
 
     }
 }
