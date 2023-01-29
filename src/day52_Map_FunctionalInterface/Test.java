@@ -25,6 +25,12 @@ public class Test {
         };
         eligibleToBuyAlcohol.apply(20);
 
+        //function3: create a function that can display the cube of a number
+        MyFirstFunctionalInterface printCube= (n)->{
+            System.out.println(n*n*n);
+        };
+        printCube.apply(3);
+
 
 
     }
