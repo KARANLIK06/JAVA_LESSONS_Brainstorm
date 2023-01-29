@@ -50,6 +50,16 @@ public class MapPractice2 {
         }
         System.out.println(count);
 
+        System.out.println("------------------------------------------");
+
+        // display the names of the employees who are making less than 118k?
+
+        for (Map.Entry<String, Integer> pairs : map.entrySet()) {
+            if (pairs.getValue()<118000){
+                System.out.println(pairs.getKey());
+            }
+        }
+
     }
 
 }
