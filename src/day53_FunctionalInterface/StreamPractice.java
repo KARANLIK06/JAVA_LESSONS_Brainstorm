@@ -49,5 +49,13 @@ public class StreamPractice {
 
         System.out.println(list4);
 
+        System.out.println("------------------------------------");
+
+        List<String> days = new ArrayList<>(Arrays.asList("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"));
+
+        days =  days.stream().map( p -> p.substring(0, 3) ).collect(Collectors.toList());
+
+        System.out.println(days);
+
     }
 }
