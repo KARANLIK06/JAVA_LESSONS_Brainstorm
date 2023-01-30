@@ -30,6 +30,15 @@ public class BuildInFunctionalInterfaces1 {
         System.out.println(names);
 
 
+        System.out.println("//////==========================////////");
+
+        Consumer<String> printEach= (s) -> {
+            for (int i = 0; i < s.length(); i++) {
+                System.out.println(s.charAt(i));
+            }
+        };
+        printEach.accept("Java");
+
 
     }
 }
