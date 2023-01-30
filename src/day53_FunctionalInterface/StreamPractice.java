@@ -91,6 +91,14 @@ public class StreamPractice {
         boolean r2 =list6.stream().allMatch(p->p<20);
         System.out.println(r2); //  true
 
+        boolean r3 =list6.stream().anyMatch(p->p>9);
+        System.out.println(r3); //  true
+
+        boolean r4 =list6.stream().noneMatch(p->p%13==0);
+        System.out.println(r4); //  true
+
+        boolean r5 =list6.stream().noneMatch(p->p%3==0);
+        System.out.println(r5); //  false
 
     }
 }
