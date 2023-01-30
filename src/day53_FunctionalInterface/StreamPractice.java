@@ -64,6 +64,14 @@ public class StreamPractice {
 
         System.out.println(evens);      // [2, 4, 6, 8, 10]
 
+        System.out.println("------------------------------------");
+
+        List<String> names = new ArrayList<>(Arrays.asList("Java", "java", "jAvA", "Python", "Ruby"));
+
+        long countJava = names.stream().filter(p -> p.equalsIgnoreCase("java")).count();
+
+        System.out.println(countJava);  //  3
+
 
     }
 }
