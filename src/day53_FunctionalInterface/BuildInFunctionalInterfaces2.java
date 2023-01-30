@@ -1,8 +1,6 @@
 package day53_FunctionalInterface;
 
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
 import java.util.function.BiPredicate;
@@ -75,6 +73,27 @@ public class BuildInFunctionalInterfaces2 {
         BiFunction<Integer,Integer,Integer> maxNum = (a,b) -> (a>b)?a:b;
         int max = maxNum.apply(100,200);
         System.out.println(max);
+
+        System.out.println("---------------------------------------------");
+
+        //2. create a function that can merge two integer arrays into a list
+
+        BiFunction<int[], int[], List<Integer>> merge = (x, y) -> {
+            List<Integer> result = new ArrayList<>();
+
+            for (int each : x) result.add(each);
+
+            for( int each: y) result.add(each);
+
+            return result;
+        };
+
+        int[] arr1 = {1,2,3,4,5};
+        int[] arr2 = {6,7,8};
+
+        List<Integer> nums = merge.apply(arr1, arr2);
+
+        System.out.println(nums);
 
     }
 }
