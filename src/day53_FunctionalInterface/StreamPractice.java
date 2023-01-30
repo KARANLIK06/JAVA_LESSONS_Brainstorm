@@ -35,5 +35,12 @@ public class StreamPractice {
 
         System.out.println(Arrays.toString(nums2));
 
+        System.out.println("------------------------------------");
+
+        List<Integer> list3 = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
+        list3 = list3.stream().limit(7).skip(3).collect(Collectors.toList());
+
+        System.out.println(list3);
+
     }
 }
