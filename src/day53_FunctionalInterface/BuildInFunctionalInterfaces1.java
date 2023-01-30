@@ -77,5 +77,23 @@ public class BuildInFunctionalInterfaces1 {
         int[] arr ={1,2,3,4,5,6,7,8,9,10};
         List<Integer> l= convertToList.apply(arr);
         System.out.println(l);
+
+        System.out.println("-------------------------------");
+
+        Function<List<Integer>,int[] > convertToArray = (a) -> {
+            int[] result = new int[a.size()];
+            for (int i = 0; i < a.size(); i++) {
+                result[i]=a.get(i);
+            }
+
+            return result;
+        };
+
+        List<Integer> numbers = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+        int[] result2 = convertToArray.apply(numbers);
+        System.out.println(Arrays.toString(result2));
+        System.out.println("-------------------------------");
+
+
     }
 }
