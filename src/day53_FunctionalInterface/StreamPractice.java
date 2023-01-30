@@ -19,5 +19,14 @@ public class StreamPractice {
         arr1 = Arrays.stream(arr1).distinct().toArray();
 
         System.out.println(Arrays.toString(arr1));
+
+        System.out.println("------------------------------------");
+
+        List<Integer> list2 = new ArrayList<>(Arrays.asList(1,2,6,9,5,3,4,5,6,7,8,9,10));
+
+        list2=list2.stream().skip(5).collect(Collectors.toList());
+
+        System.out.println(list2);
+
     }
 }
