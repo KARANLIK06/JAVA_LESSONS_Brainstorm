@@ -57,13 +57,15 @@ public class BuildInFunctionalInterfaces2 {
         scrumTeam1.put("Mert","PO");
         scrumTeam1.put("Lee","SDET");
 
-
+        /*
         for (Map.Entry<String, String> entry : scrumTeam1.entrySet()) {
             String k = entry.getKey();
             String v = entry.getValue();
             System.out.println(k + " : "+v);
         }
+        */
 
+        scrumTeam1.forEach( (k,v) -> System.out.println(k+" : "+v ) );
 
 
 
