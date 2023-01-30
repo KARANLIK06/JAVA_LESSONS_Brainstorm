@@ -42,5 +42,12 @@ public class StreamPractice {
 
         System.out.println(list3);
 
+        System.out.println("------------------------------------");
+
+        List<Integer> list4 = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
+        list4 = list4.stream().map( p -> p * 10 ).collect(Collectors.toList());
+
+        System.out.println(list4);
+
     }
 }
