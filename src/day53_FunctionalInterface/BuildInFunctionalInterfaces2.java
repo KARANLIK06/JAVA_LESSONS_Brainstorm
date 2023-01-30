@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.BiConsumer;
+import java.util.function.BiFunction;
 import java.util.function.BiPredicate;
 
 public class BuildInFunctionalInterfaces2 {
@@ -67,7 +68,13 @@ public class BuildInFunctionalInterfaces2 {
 
         scrumTeam1.forEach( (k,v) -> System.out.println(k+" : "+v ) );
 
+        System.out.println("---------------------------------------------");
 
+        //1. create a function that takes two integers and returns the maximum integer
+
+        BiFunction<Integer,Integer,Integer> maxNum = (a,b) -> (a>b)?a:b;
+        int max = maxNum.apply(100,200);
+        System.out.println(max);
 
     }
 }
