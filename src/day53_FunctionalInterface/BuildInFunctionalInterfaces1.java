@@ -22,6 +22,14 @@ public class BuildInFunctionalInterfaces1 {
         list.removeIf(isEven);
         System.out.println(list);
 
+        System.out.println("------------------------------------------");
+
+        List<String> names = new ArrayList<>();
+        names.addAll(Arrays.asList("Level","Anna","Java","Python"));
+        names.removeIf(isPalindrome);
+        System.out.println(names);
+
+
 
     }
 }
