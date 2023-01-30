@@ -72,6 +72,16 @@ public class StreamPractice {
 
         System.out.println(countJava);  //  3
 
+        names.stream().filter( p -> p.equalsIgnoreCase("java")).forEach( p -> System.out.println(p));
+        //Java
+        //java
+        //jAvA
+
+
+
+
+
+
 
     }
 }
