@@ -22,11 +22,18 @@ public class StreamPractice {
 
         System.out.println("------------------------------------");
 
-        List<Integer> list2 = new ArrayList<>(Arrays.asList(1,2,6,9,5,3,4,5,6,7,8,9,10));
+        List<Integer> list2 = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
 
         list2=list2.stream().skip(5).collect(Collectors.toList());
 
         System.out.println(list2);
+
+        System.out.println("------------------------------------");
+
+        int[] nums2 =  {1,2,3,4,5,6,7,8,9,10};
+        nums2 = Arrays.stream(nums2).skip(4).toArray();
+
+        System.out.println(Arrays.toString(nums2));
 
     }
 }
