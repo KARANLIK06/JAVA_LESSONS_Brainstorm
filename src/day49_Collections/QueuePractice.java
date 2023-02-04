@@ -22,7 +22,9 @@ public class QueuePractice {
         System.out.println("-------------------------------------------------");
 
         priorityQueue.poll(); // Deletes index[0]
+        System.out.println(priorityQueue);
 
+        priorityQueue.poll(); // Deletes index[0]
         System.out.println(priorityQueue);
 
         arrayDeque.poll();
